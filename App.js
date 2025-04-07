@@ -66,7 +66,7 @@ class Topo extends Component {
 class SaladaCaesar extends Component {
   render() {
     return (
-      <View style={{ marginBottom: 20, padding: 1, borderRadius: 20, backgroundColor: '#ebd592',  flexDirection:  'row',
+      <View style={{ marginBottom: 20, padding: 1, borderRadius: 20, backgroundColor: '#ebd592',  flexDirection:  'column',
       alignItems: 'center',  paddingHorizontal: 10}}>
 
 
@@ -75,11 +75,13 @@ class SaladaCaesar extends Component {
           style={{ width: 150,  height: 150, borderRadius: 75, marginTop: 10, marginBottom: 10}}
         />
 
-
-       <Text style={{ fontWeight: 'bold', fontSize: 40, fontFamily: 'Ink Free', padding: '15px' }}>
+       <Text style={{ fontWeight: 'bold', fontSize: 40, fontFamily: 'Ink Free', padding: '15px', textAlign: 'center', color: '#301e1a' }}>
           {this.props.titulo}
         </Text>
 
+        <Text style={{ fontSize: 15, fontFamily: 'MV Boli', color: '#3f2c26', textAlign: 'center', marginTop: 2, marginBottom: 10,}}>
+        🕒Tempo de Preparo: 20 - 30 min
+    </Text>
 
       </View>
     )
@@ -90,17 +92,19 @@ class SaladaCaesar extends Component {
 class SaladaCaprese extends Component {
   render() {
     return (
-      <View style={{ marginBottom: 20, padding: 1, borderRadius: 20, backgroundColor: '#ebd592', flexDirection: 'row',
+      <View style={{ marginBottom: 20, padding: 1, borderRadius: 20, backgroundColor: '#ebd592', flexDirection:  'column',
       alignItems: 'center', paddingHorizontal: 10 }}>
    
     <Image
         source={this.props.imagem}
         style={{ width: 150, height: 150, borderRadius: 75, marginTop: 10, marginBottom: 10}}
     />
-
-
-      <Text style={{ fontWeight: 'bold', fontSize: 40, fontFamily: 'Ink Free', padding: '15px'}}>
+      <Text style={{ fontWeight: 'bold', fontSize: 40, fontFamily: 'Ink Free', padding: '15px',  textAlign: 'center', color: '#301e1a'}}>
       {this.props.titulo}
+    </Text>
+
+    <Text style={{ fontSize: 15, fontFamily: 'MV Boli', color: '#3f2c26', textAlign: 'center', marginTop: 2, marginBottom: 10,}}>
+    🕒Tempo de Preparo: 10 - 15 min
     </Text>
       </View>
     )
@@ -111,7 +115,7 @@ class SaladaCaprese extends Component {
 class SaladaTropical extends Component {
   render() {
     return (
-      <View style={{ marginBottom: 20, padding: 1, borderRadius: 20, backgroundColor: '#ebd592', flexDirection: 'row',
+      <View style={{ marginBottom: 20, padding: 1, borderRadius: 20, backgroundColor: '#ebd592', flexDirection:  'column',
       alignItems: 'center', paddingHorizontal: 10 }}>
      
     <Image
@@ -120,8 +124,12 @@ class SaladaTropical extends Component {
     />
 
 
-    <Text style={{ fontWeight: 'bold', fontSize: 40, fontFamily: 'Ink Free', padding: '15px'}}>
+    <Text style={{ fontWeight: 'bold', fontSize: 40, fontFamily: 'Ink Free', padding: '15px', textAlign: 'center', color: '#301e1a'}}>
       {this.props.titulo}
+    </Text>
+
+    <Text style={{ fontSize: 15, fontFamily: 'MV Boli', color: '#3f2c26', textAlign: 'center', marginTop: 2, marginBottom: 10,}}>
+    🕒Tempo de Preparo: 15 - 20 min
     </Text>
       </View>
     )
@@ -132,7 +140,7 @@ class SaladaTropical extends Component {
 class SaladadeBatata extends Component {
   render() {
     return (
-      <View style={{ marginBottom: 20, padding: 1, borderRadius: 20, backgroundColor: '#ebd592', flexDirection: 'row',
+      <View style={{ marginBottom: 20, padding: 1, borderRadius: 20, backgroundColor: '#ebd592', flexDirection:  'column',
       alignItems: 'center', paddingHorizontal: 10 }}>
        
      
@@ -141,10 +149,14 @@ class SaladadeBatata extends Component {
         style={{ width: 150, height: 150, borderRadius: 75, marginTop: 10, marginBottom: 10}}
     />
 
-
-     <Text style={{ fontWeight: 'bold', fontSize: 40, fontFamily: 'Ink Free', padding: '15px',}}>
+     <Text style={{ fontWeight: 'bold', fontSize: 40, fontFamily: 'Ink Free', padding: '15px', textAlign: 'center', color: '#301e1a'}}>
       {this.props.titulo}
     </Text>
+
+    <Text style={{ fontSize: 15, fontFamily: 'MV Boli', color: '#3f2c26', textAlign: 'center', marginTop: 2, marginBottom: 10,}}>
+    🕒Tempo de Preparo: 30 - 40 min
+    </Text>
+
       </View>
     )
   }
@@ -154,8 +166,8 @@ class SaladadeBatata extends Component {
 class SaladaCamarao extends Component {
   render() {
     return (
-      <View style={{padding: 1, borderRadius: 20, backgroundColor: '#ebd592', flexDirection: 'row',
-      alignItems: 'center', paddingHorizontal: 10 }}>
+      <View style={{padding: 1, borderRadius: 20, backgroundColor: '#ebd592', flexDirection:  'column',
+      alignItems: 'center', paddingHorizontal: 10}}>
      
     <Image
         source={this.props.imagem}
@@ -163,9 +175,14 @@ class SaladaCamarao extends Component {
     />
 
 
-    <Text style={{ fontWeight: 'bold', fontSize: 40, fontFamily: 'Ink Free', padding: '15px'}}>
+    <Text style={{ fontWeight: 'bold', fontSize: 40, fontFamily: 'Ink Free', padding: '15px', textAlign: 'center', color: '#301e1a'}}>
       {this.props.titulo}
     </Text>
+
+    <Text style={{
+  fontSize: 15, fontFamily: 'MV Boli', color: '#3f2c26', textAlign: 'center', marginTop: 2, marginBottom: 10,}}>
+  🕒Tempo de Preparo: 15 - 20 min 
+</Text>
       </View>
     )
   }
@@ -173,5 +190,4 @@ class SaladaCamarao extends Component {
 
 
 export default App;
-
 
